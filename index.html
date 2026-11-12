@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberPro - Gestão para Barbearias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =====================================
+         PÁGINA INICIAL
+    ====================================== -->
+
+    <main id="landingView" class="landing-page">
+
+        <header class="landing-header">
+
+            <a href="#" class="landing-logo">
+                BARBER<strong>PRO</strong>
+                <span>GESTÃO INTELIGENTE PARA BARBEARIAS</span>
+            </a>
+
+            <nav class="landing-nav">
+                <a href="#inicio">Início</a>
+                <a href="#recursos">Recursos</a>
+                <button type="button" id="btnLandingLogin" class="landing-login">
+                    Entrar
+                </button>
+            </nav>
+
+        </header>
+
+        <section class="landing-hero" id="inicio">
+
+            <div class="landing-hero-content">
+
+                <span class="landing-tag">
+                    GESTÃO INTELIGENTE PARA BARBEARIAS
+                </span>
+
+                <h1>
+                    Sua barbearia merece uma
+                    <span>gestão profissional.</span>
+                </h1>
+
+                <p>
+                    Tenha controle total da sua barbearia.
+                    Organize agendamentos, clientes, funcionários
+                    e financeiro em um único lugar.
+                </p>
+
+                <div class="landing-buttons">
+
+                    <button type="button" id="btnComecarAgora">
+                        COMEÇAR AGORA
+                        <span>→</span>
+                    </button>
+
+                    <button type="button" id="btnJaTenhoConta">
+                        Já tenho uma conta
+                    </button>
+
+                </div>
+
+                <div class="landing-benefits">
+                    <span>✓ Mais organização</span>
+                    <span>✓ Mais controle</span>
+                    <span>✓ Mais praticidade</span>
+                </div>
+
+            </div>
+
+            <div class="landing-hero-image">
+
+                <div class="landing-image-overlay">
+                    <span>BARBERPRO</span>
+                    <h2>Seu negócio. Seu controle.</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="landing-features" id="recursos">
+
+            <div class="landing-section-heading">
+                <span>RECURSOS DA PLATAFORMA</span>
+                <h2>Tudo o que você precisa em um só lugar.</h2>
+                <p>
+                    Simplifique a administração da sua barbearia
+                    e tenha mais tempo para cuidar dos seus clientes.
+                </p>
+            </div>
+
+            <div class="landing-features-grid">
+
+                <article class="landing-feature-card">
+                    <div class="landing-feature-icon">▦</div>
+                    <h3>Agendamentos</h3>
+                    <p>
+                        Organize horários, acompanhe atendimentos
+                        e tenha controle da sua agenda.
+                    </p>
+                </article>
+
+                <article class="landing-feature-card">
+                    <div class="landing-feature-icon">♙</div>
+                    <h3>Clientes</h3>
+                    <p>
+                        Cadastre clientes, consulte informações
+                        e acompanhe o histórico de atendimentos.
+                    </p>
+                </article>
+
+                <article class="landing-feature-card">
+                    <div class="landing-feature-icon">R$</div>
+                    <h3>Financeiro</h3>
+                    <p>
+                        Acompanhe receitas, despesas e movimentações
+                        financeiras da sua barbearia.
+                    </p>
+                </article>
+
+                <article class="landing-feature-card">
+                    <div class="landing-feature-icon">♧</div>
+                    <h3>Funcionários</h3>
+                    <p>
+                        Organize sua equipe e mantenha
+                        as informações dos funcionários em um lugar.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="landing-cta">
+
+            <span>BARBERPRO</span>
+
+            <h2>Pronto para organizar sua barbearia?</h2>
+
+            <p>
+                Comece agora e tenha sua gestão em um só lugar.
+            </p>
+
+            <button type="button" id="btnLandingCadastro">
+                CRIAR MINHA CONTA →
+            </button>
+
+        </section>
+
+        <footer class="landing-footer">
+            © 2026 BarberPro. Todos os direitos reservados.
+        </footer>
+
+    </main>
+
+
+    <!-- =====================================
+         LOGIN E CADASTRO
+    ====================================== -->
+
+    <main class="container hidden">
+
+        <section class="login-area">
+
+            <div class="logo">
+                <span>BARBER</span><strong>PRO</strong>
+                <p>GESTÃO INTELIGENTE PARA BARBEARIAS</p>
+            </div>
+
+            <div class="formulario">
+
+                <!-- LOGIN -->
+
+                <div id="loginView">
+
+                    <h1>Bem-vindo de volta</h1>
+
+                    <p class="subtitulo">
+                        Entre na sua conta para gerenciar sua barbearia.
+                    </p>
+
+                    <form id="loginForm">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email"
+                            placeholder="seuemail@exemplo.com" required>
+
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha"
+                            placeholder="Digite sua senha" required>
+
+                        <button type="submit">
+                            ENTRAR NA PLATAFORMA
+                        </button>
+
+                    </form>
+
+                    <div class="separador"></div>
+
+                    <p class="cadastro">
+                        Ainda não tem uma conta?
+                        <a href="#" id="criarConta">Criar minha barbearia</a>
+                    </p>
+
+                    <p class="voltar-inicio">
+                        <a href="#" id="voltarInicioLogin">← Voltar para o início</a>
+                    </p>
+
+                </div>
+
+
+                <!-- CADASTRO -->
+
+                <div id="cadastroView" class="hidden">
+
+                    <h1>Crie sua conta</h1>
+
+                    <p class="subtitulo">
+                        Cadastre sua barbearia no BarberPro.
+                    </p>
+
+                    <form id="cadastroForm">
+
+                        <label for="nomeBarbearia">Nome da barbearia</label>
+                        <input type="text" id="nomeBarbearia"
+                            placeholder="Ex: Barbearia Central" required>
+
+                        <label for="responsavel">Nome do responsável</label>
+                        <input type="text" id="responsavel"
+                            placeholder="Seu nome completo" required>
+
+                        <label for="emailCadastro">E-mail</label>
+                        <input type="email" id="emailCadastro"
+                            placeholder="seuemail@exemplo.com" required>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone"
+                            placeholder="(00) 00000-0000" required>
+
+                        <label for="senhaCadastro">Senha</label>
+                        <input type="password" id="senhaCadastro"
+                            placeholder="Crie uma senha" required>
+
+                        <label for="confirmarSenha">Confirmar senha</label>
+                        <input type="password" id="confirmarSenha"
+                            placeholder="Digite a senha novamente" required>
+
+                        <button type="submit">
+                            CRIAR MINHA CONTA
+                        </button>
+
+                    </form>
+
+                    <div class="separador"></div>
+
+                    <p class="cadastro">
+                        Já possui uma conta?
+                        <a href="#" id="voltarLogin">Fazer login</a>
+                    </p>
+
+                    <p class="voltar-inicio">
+                        <a href="#" id="voltarInicioCadastro">← Voltar para o início</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <footer>
+                © 2026 BarberPro. Todos os direitos reservados.
+            </footer>
+
+        </section>
+
+        <section class="imagem-area">
+
+            <div class="mensagem">
+
+                <span>MAIS ORGANIZAÇÃO. MAIS RESULTADOS.</span>
+
+                <h2>
+                    Sua barbearia merece uma gestão profissional.
+                </h2>
+
+                <p>
+                    Organize seus horários, clientes, funcionários
+                    e financeiro em um só lugar.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL DE LOGIN REALIZADO -->
+
+    <div id="modalLoginSucesso" class="modal-overlay hidden">
+
+        <div class="modal-card modal-sucesso-login">
+
+            <div class="success-icon">✓</div>
+
+            <h2>Login realizado com sucesso!</h2>
+
+            <p>
+                Seu acesso foi autorizado.
+                Estamos preparando seu painel.
+            </p>
+
+            <div class="modal-actions">
+                <button type="button" id="continuarLogin" class="gold-button">
+                    Continuar
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DE ERRO DE LOGIN -->
+
+    <div id="modalErroLogin" class="modal-overlay hidden">
+
+        <div class="modal-card modal-erro-login">
+
+            <div class="erro-login-icon">!</div>
+
+            <h2 id="tituloErroLogin">Não foi possível entrar</h2>
+
+            <p id="mensagemErroLogin">
+                Verifique seus dados e tente novamente.
+            </p>
+
+            <div class="modal-actions">
+                <button type="button" id="fecharErroLogin" class="gold-button">
+                    Tentar novamente
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
